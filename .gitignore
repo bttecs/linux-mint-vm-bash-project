@@ -1,0 +1,5 @@
+app-logs/
+node_modules/
+*.log
+*.tgz
+*.tar.gz
