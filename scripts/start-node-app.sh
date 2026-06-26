@@ -2,9 +2,9 @@
 set -euo pipefail
 
 ARTIFACT_URL="https://node-envvars-artifact.s3.eu-west-2.amazonaws.com/bootcamp-node-envvars-project-1.0.0.tgz"
-APP_ENV="dev"
-DB_USER="myuser"
-DB_PWD="mysecret"
+APP_ENV="${APP_ENV:-dev}"
+DB_USER="${DB_USER:?DB_USER must be set before running this script}"
+DB_PWD="${DB_PWD:?DB_PWD must be set before running this script}"
 APP_USER="myapp"
 WORK_DIR="/tmp/bootcamp-node-envvars"
 LOG_DIR_INPUT="${1:-app-logs}"

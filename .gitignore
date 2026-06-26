@@ -3,3 +3,16 @@ node_modules/
 *.log
 *.tgz
 *.tar.gz
+
+# Environment variable files
+.env
+.env.*
+!.env.example
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
